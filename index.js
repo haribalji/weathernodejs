@@ -36,14 +36,14 @@ app.get("/", async (req, res) => {
     const data = response.data;
     // console.log(data.location.city);
 
-    res.render(__dirname +"/views/index.ejs",{
+    res.render(__dirname +"views/index.ejs",{
       result:data,
       
 
     });
   } catch (error) {
     console.error("Failed to make request:", error.message);
-    res.render(__dirname +"/views/index.ejs", {
+    res.render(__dirname +"views/index.ejs", {
       error: error.message,  
     });
   }
@@ -80,14 +80,14 @@ app.get("/", async (req, res) => {
       const data = response.data;
       // console.log(data.location.city);
   
-      res.render(__dirname +"/views/index.ejs",{
+      res.render(__dirname +"views/index.ejs",{
         result:data,
         
 
       });
     } catch (error) {
       console.error("Failed to make request:", error.message);
-      res.render(__dirname +"/views/index.ejs", {
+      res.render(__dirname +"views/index.ejs", {
         error: error.message,  
       });
     }
