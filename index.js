@@ -9,8 +9,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const port = 5000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.set('view engine', 'ejs');
-app.set('views', './views'); // Relative path to the views directory
+// app.set('view engine', 'ejs');
+// app.set('views', './views'); // Relative path to the views directory
 
 
 app.use(express.json());
