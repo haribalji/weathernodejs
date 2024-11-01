@@ -43,7 +43,7 @@ app.get("/", async (req, res) => {
 
     });
   } catch (error) {
-    console.error("Failed to make request:", error.message);
+    console.error("Result Not found Dude");
     res.render(__dirname +"/index.ejs", {
       error: error.message,  
     });
